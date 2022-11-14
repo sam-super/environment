@@ -37,4 +37,4 @@ but you can test locally to be confident that your PR will pass CI.
 ## Changelog, versioning and publishing
 
 Keeping the changelog updated, bumping the version of the package
-and publishing to npm are automatically done in the CI pipeline when pushing to `master`.
+and publishing to npm are automatically done in the CI pipeline when pushing to `main`.
