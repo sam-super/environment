@@ -1,9 +1,10 @@
 # environment
 
+> **NOTE:** This is a fork of the excellent [@strattadb/environment](https://www.npmjs.com/package/@strattadb/environment), only created because issues/PRs don't seem to be being addressed in the original repo any more.
+
 [![Azure Pipelines](https://img.shields.io/azure-devops/build/strattadb/0d9c480f-815f-404d-8d52-50af29a893e6/1/develop.svg?style=for-the-badge)](https://dev.azure.com/strattadb/environment/_build?definitionId=1)
 [![npm](https://img.shields.io/npm/v/@strattadb/environment.svg?style=for-the-badge)](https://www.npmjs.com/package/@strattadb/environment)
-[![Codecov](https://img.shields.io/codecov/c/github/dbstratta/environment/develop.svg?style=for-the-badge)](https://codecov.io/gh/dbstratta/environment)
-[![David](https://img.shields.io/david/dbstratta/environment.svg?style=for-the-badge)](https://david-dm.org/dbstratta/environment)
+[![Codecov](https://img.shields.io/codecov/c/github/sadams/environment/develop.svg?style=for-the-badge)](https://codecov.io/gh/sadams/environment)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
 Environment variable configuration for Node.js made easy.
