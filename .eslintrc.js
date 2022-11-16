@@ -95,4 +95,12 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ['./*.js'],
+      rules: {
+        "unicorn/prefer-module": "off"
+      }
+    }
+  ]
 };

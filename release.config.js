@@ -19,7 +19,7 @@ const gitPlugin = {
 const githubPlugin = '@semantic-release/github';
 
 module.exports = {
-  branch: 'master',
+  branch: 'main',
   verifyConditions: [changelogPlugin, npmPlugin, gitPlugin, githubPlugin],
   prepare: [changelogPlugin, npmPlugin, gitPlugin],
   success: [],
