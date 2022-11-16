@@ -3,10 +3,10 @@
   "version": "8.1.0",
   "description": "Environment variable configuration for Node.js made easy.",
   "main": "dist/index.js",
-  "homepage": "https://github.com/sadams/environment",
+  "homepage": "https://github.com/sam-super/environment",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sadams/environment.git"
+    "url": "https://github.com/sam-super/environment.git"
   },
   "scripts": {
     "build": "yarn build-lib && yarn build-types",
@@ -98,7 +98,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/sadams/environment/issues",
+    "url": "https://github.com/sam-super/environment/issues",
     "email": "adams.sam@gmail.com"
   },
   "license": "MIT",
