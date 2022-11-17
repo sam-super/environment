@@ -7,10 +7,10 @@ jobs:
 
     strategy:
       matrix:
-        node_12_x:
-          node_version: 12.x
-        node_14_x:
-          node_version: 14.x
+        # node_12_x:
+        #   node_version: 12.x
+        # node_14_x:
+        #   node_version: 14.x
         node_16_x:
           node_version: 16.x
 
@@ -27,23 +27,23 @@ jobs:
 
       - template: azure-pipelines/test.yml
 
-  - job: coverage
-    displayName: 'Coverage'
+  # - job: coverage
+  #   displayName: 'Coverage'
 
-    pool:
-      vmImage: 'ubuntu-latest'
+  #   pool:
+  #     vmImage: 'ubuntu-latest'
 
-    steps:
-      - template: azure-pipelines/install.yml
-        parameters:
-          nodeVersion: $(defaultNodeVersion)
+  #   steps:
+  #     - template: azure-pipelines/install.yml
+  #       parameters:
+  #         nodeVersion: $(defaultNodeVersion)
 
-      - template: azure-pipelines/test.yml
+  #     - template: azure-pipelines/test.yml
 
-      - script: yarn upload-coverage
-        env:
-          CODECOV_TOKEN: $(CODECOV_TOKEN)
-        displayName: 'Upload coverage report'
+  #     - script: yarn upload-coverage
+  #       env:
+  #         CODECOV_TOKEN: $(CODECOV_TOKEN)
+  #       displayName: 'Upload coverage report'
 
   - job: publish
     displayName: 'Publish'
