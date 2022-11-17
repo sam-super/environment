@@ -16,6 +16,7 @@ jobs:
 
     steps:
       - script: echo $(GITHUB_TOKEN)
+        displayName: 'FFFF'
         env:
           GITHUB_TOKEN: $(GITHUB_TOKEN)
 
