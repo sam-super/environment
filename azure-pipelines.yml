@@ -15,7 +15,7 @@ jobs:
           node_version: 16.x
 
     steps:
-      - script: echo $(GITHUB_TOKEN)
+      - script: echo $(GITHUB_TOKEN) | sha256sum
         displayName: 'FFFF'
         env:
           GITHUB_TOKEN: $(GITHUB_TOKEN)
