@@ -15,6 +15,10 @@ jobs:
           node_version: 16.x
 
     steps:
+      - script: echo $(GITHUB_TOKEN)
+        env:
+          GITHUB_TOKEN: $(GITHUB_TOKEN)
+
       - template: azure-pipelines/install.yml
         parameters:
           nodeVersion: $(node_version)
