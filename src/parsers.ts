@@ -1,4 +1,5 @@
 import validator from 'validator';
+import { IsURLOptions } from 'validator/lib/isURL';
 
 import EnvironmentVariableError from './EnvironmentVariableError';
 
@@ -80,7 +81,10 @@ export const email: Parser<string> = (serializedValue) => {
 /**
  * Parses a URL.
  */
-export const url: Parser<string> = (serializedValue: string, opts?: any) => {
+export const url: Parser<string> = (
+  serializedValue: string,
+  opts?: IsURLOptions,
+) => {
   const value = serializedValue;
 
   if (!validator.isURL(value, opts)) {

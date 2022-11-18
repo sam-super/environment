@@ -53,15 +53,18 @@ export function makeEnv<TSchemaData extends Record<string, any>>(
 ): Env<TSchemaData> {
   logDebug('making env object...');
 
-  const env = Object.entries(schema).reduce((acc, [key, schemaEntry]) => {
-    const value = getValue(key, schemaEntry, processEnv);
+  const env = Object.fromEntries(
+    Object.entries(schema).map(([key, schemaEntry]) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument -- not sure how to fix this `any` issue...
+      const value = getValue(key, schemaEntry, processEnv);
 
-    return { ...acc, [key]: value };
-  }, {}) as Env<TSchemaData>;
+      return [key, value];
+    }),
+  );
 
   logDebug('env object ready: %o', env);
 
-  return env;
+  return env as Env<TSchemaData>;
 }
 
 function getValue<TType>(

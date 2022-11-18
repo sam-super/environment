@@ -8,7 +8,6 @@ import {
   negativeInteger,
   nonNegativeInteger,
   nonPositiveInteger,
-  Parser,
   port,
   positiveInteger,
   string,
@@ -35,7 +34,7 @@ const parsers = {
   whitelist,
 };
 
-export { Parser, parsers };
+export { parsers };
 export {
   makeEnv,
   Env,
@@ -44,3 +43,5 @@ export {
   SchemaEntryRequiredInfo,
 } from './environment';
 export { default as EnvironmentVariableError } from './EnvironmentVariableError';
+
+export { Parser } from './parsers';

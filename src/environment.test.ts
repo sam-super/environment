@@ -140,7 +140,7 @@ describe('makeEnv', () => {
         },
         processEnv,
       );
-    }).toThrowError(description);
+    }).toThrow(description);
   });
 
   test('uses process.env if the processEnv argument is not provided', () => {
