@@ -2,10 +2,10 @@
 
 > **NOTE:** This is a fork of the excellent [@strattadb/environment](https://www.npmjs.com/package/@strattadb/environment), only created because issues/PRs don't seem to be being addressed in the original repo any more.
 
-[![Azure Pipelines](https://img.shields.io/azure-devops/build/strattadb/0d9c480f-815f-404d-8d52-50af29a893e6/1/develop.svg?style=for-the-badge)](https://dev.azure.com/strattadb/environment/_build?definitionId=1)
-[![npm](https://img.shields.io/npm/v/@strattadb/environment.svg?style=for-the-badge)](https://www.npmjs.com/package/@strattadb/environment)
-[![Codecov](https://img.shields.io/codecov/c/github/sam-super/environment/develop.svg?style=for-the-badge)](https://codecov.io/gh/sadams/environment)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
+![build](https://github.com/sam-super/environment/actions/workflows/ci-cd.yml/badge.svg)
+[![npm](https://img.shields.io/npm/v/@sadams/environment.svg)](https://www.npmjs.com/package/@sadams/environment)
+[![Codecov](https://img.shields.io/codecov/c/github/sam-super/environment/main.svg)](https://codecov.io/gh/sam-adams/environment)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 Environment variable configuration for Node.js made easy.
 
@@ -67,13 +67,13 @@ to _your_ definition of valid. See [how to use it](#usage).
 With [Yarn](https://yarnpkg.com/):
 
 ```bash
-yarn add @strattadb/environment
+yarn add @sadams/environment
 ```
 
 or with npm:
 
 ```bash
-npm install @strattadb/environment
+npm install @sadams/environment
 ```
 
 ## Usage
@@ -83,7 +83,7 @@ An example `env.js` file:
 ```javascript
 // env.js
 
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   nodeEnv: {
@@ -202,7 +202,7 @@ ensures the value is in the whitelist.
 Example:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   color: {
@@ -221,7 +221,7 @@ ensures the value matches the pattern.
 Example:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   color: {
@@ -240,7 +240,7 @@ The default value separator is `,`.
 Example:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   color: {
@@ -277,7 +277,7 @@ it'll throw:
 ```javascript
 // env.js
 
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   notSet: {
@@ -301,7 +301,7 @@ EnvironmentVariableError: NOT_SET is required but is not set
 If the env variable is not required you must specify a default value:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   port: {
@@ -322,7 +322,7 @@ The value you return is what you'll get in the env object.
 If the value is not valid you should throw an error:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv({
   someValue: {
@@ -349,7 +349,7 @@ const dotenv = require('dotenv');
 
 dotenv.config(); // Loads env variables from `.env` file to `process.env`.
 
-const { makeEnv, parsers } = require('@strattadb/environment');
+const { makeEnv, parsers } = require('@sadams/environment');
 
 const env = makeEnv({
   secretToken: {
@@ -367,7 +367,7 @@ but you can pass you own processEnv object as the second argument that will
 be used instead of `process.env`:
 
 ```javascript
-import { makeEnv, parsers } from '@strattadb/environment';
+import { makeEnv, parsers } from '@sadams/environment';
 
 const env = makeEnv(
   {
@@ -420,6 +420,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Maintainers
 
 - [Diego Stratta](https://github.com/strattadb)
+- [Sam Adams](https://github.com/sadams)
 
 ## Who's using environment
 

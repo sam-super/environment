@@ -7,13 +7,13 @@
 With Yarn:
 
 ```bash
-yarn add @strattadb/environment
+yarn add @sadams/environment
 ```
 
 or with npm:
 
 ```bash
-npm install @strattadb/environment
+npm install @sadams/environment
 ```
 
 ### Running the server

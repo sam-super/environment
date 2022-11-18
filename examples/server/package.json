@@ -1,11 +1,11 @@
 {
   "name": "example-server",
-  "description": "Example of an HTTP server using @strattadb/environment",
+  "description": "Example of an HTTP server using @sadams/environment",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@strattadb/environment": "^8.0.2"
+    "@sadams/environment": "^9.0.0"
   }
 }

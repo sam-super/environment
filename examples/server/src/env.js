@@ -1,4 +1,4 @@
-const { makeEnv, parsers } = require('@strattadb/environment');
+const { makeEnv, parsers } = require('@sadams/environment');
 
 const env = makeEnv({
   host: {

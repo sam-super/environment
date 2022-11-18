@@ -4,7 +4,7 @@ Thanks for contributing!
 
 ## Getting started
 
-1. Clone the repo: `git clone https://github.com/strattadb/environment.git`.
+1. Clone the repo: `git clone https://github.com/sam-super/environment.git`.
 2. Install the dependencies: `yarn install`.
 
 ## Committing
