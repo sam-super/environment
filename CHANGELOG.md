@@ -1,5 +1,28 @@
 # Changelog
 
+# [9.0.0](https://github.com/sam-super/environment/compare/v8.0.2...v9.0.0) (2022-11-18)
+
+
+### Bug Fixes
+
+* **ci:** add environment to the publish job ([2694fa2](https://github.com/sam-super/environment/commit/2694fa2b5abcef398e29b4cd0782bd8d4a28ab7d))
+* **ci:** set correct repository in package.json ([96309f0](https://github.com/sam-super/environment/commit/96309f07cd822da3ad1223a881245ed0e87c271a))
+
+
+### chore
+
+* drop Node 10 support ([2f68e9e](https://github.com/sam-super/environment/commit/2f68e9e233fcf63b5b10418caa61a9b159f45a16))
+
+
+### Features
+
+* add ability to pass options to parsers.url ([df5ff4d](https://github.com/sam-super/environment/commit/df5ff4d0d52424192191eef1f376eb5a7674cfe9))
+
+
+### BREAKING CHANGES
+
+* Drop Node 10 support. The minimum supported version is 12
+
 ## [8.0.2](https://github.com/strattadb/environment/compare/v8.0.1...v8.0.2) (2020-11-28)
 
 
