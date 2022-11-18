@@ -4,7 +4,7 @@
 
 ![build](https://github.com/sam-super/environment/actions/workflows/ci-cd.yml/badge.svg)
 [![npm](https://img.shields.io/npm/v/@sadams/environment.svg)](https://www.npmjs.com/package/@sadams/environment)
-[![Codecov](https://img.shields.io/codecov/c/github/sam-super/environment/main.svg)](https://codecov.io/gh/sam-adams/environment)
+[![Codecov](https://img.shields.io/codecov/c/github/sam-super/environment/main.svg)](https://codecov.io/gh/sam-super/environment)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 Environment variable configuration for Node.js made easy.
